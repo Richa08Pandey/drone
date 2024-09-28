@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drone Hub Store</title>
+    <link rel="icons" href="">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="Stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" >
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Drone Hub</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a><i class="fa-regular fa-user"></i></a></li>
+                <li><a><i class="fa-solid fa-cart-shopping"></i></a></li>   
+            </ul>
+        </nav>
+    </header>
+
+
+    <section id="homepage" class="hero">
+        <div class="hero-content">
+            <div id="homecontent">
+            <h1>Welcome to Drone Hub Store</h1>
+            <p>Leading the future of drone technology.</p>
+            </div>
+            <a href="#products" class="btn" id="product-btn">Our Products</a>
+            <video autoplay loop muted class="background-clip"> 
+                <source src="drone.mp4" type="video/mp4"> 
+            </video>
+        </div>
+    </section>
+
+    <section id="products" class="products">
+        <h2>Our Products</h2>
+        <div class="product-list">
+            <div class="product-item" onclick="showProduct('Mini 4 pro')">
+                <a href="./mini4pro.html" ><img src="./drone photos/Dji mini series/DJI MINI 4 PRO.png" alt="DJI MINI 4 PRO " id="img1"> </a>
+                <h3>Mini 4 pro</h3>
+                
+                
+            </div>
+            <div class="product-item" onclick="showProduct('product2')">
+                <a href="" ><img src="./drone photos/mavic series/MAVIC 3 PRO.png" alt="Product 2" id="img4"></a>
+                <h3>Mavic 3 Pro</h3>
+            </div>
+            <div class="product-item" onclick="showProduct('product3')">
+               <a href=""><img src="./drone photos/mavic series/MAVIC 3 CLASSICS.png" alt="Product 3" id="img2"></a> 
+                <h3>Mavic 3 Classic</h3>
+            </div>
+            <div class="product-item" onclick="showProduct('product4')">
+               <a href=""><img src="./drone photos/Dji mini series/DJI MAVIC MINI.png" alt="Product 4" id="img3"></a> 
+                <h3>Phantom 4</h3>
+            </div>
+            <div class="product-item" onclick="showProduct('product4')">
+                <a href=""><img src="./drone photos/Avata series/DJI AVATA.png" alt="Product 4" id="img3"></a> 
+                 <h3>Avata</h3>
+             </div>
+             <div class="product-item" onclick="showProduct('product4')">
+                <a href=""><img src="./drone photos/Avata series/DJI AVATA 2.png" alt="Product 4" id="img3"></a> 
+                 <h3>Avata 2</h3>
+             </div>
+        </div>
+    </section>
+
+    <section id="product-details" class="product-details">
+        <!-- Product details will be dynamically injected here -->
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>we specialize in high-performance drones designed for professionals and hobbyists alike. Our mission is to offer top-quality drones that combine advanced technology with ease of use, making aerial innovation accessible to everyone.</p>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form action="submit_form.php" method="POST">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn" id="submitbtn">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section contact-details">
+                <h3>Contact Us</h3>
+                <p>Email: abc.1234@gmail.com</p>
+                <p>Phone: +91-90xxxxxxxx</p>
+                <p>Address: ABC XYZ</p>       
+            </div>
+            <div>
+                <h3>Support</h3>
+                <uL>
+                <li>Repair</li>
+                </uL>
+            </div>
+          
+            <div class="footer-section social-media">
+                <h3>Follow Us</h3>
+                <div class="icons">
+                    <a id="facebook" href="#"><i class="fa-brands fa-facebook" target="_blank"></i></a>
+                    <a id="twitter" href="#"><i class="fa-brands fa-x-twitter" target="_blank"></i></a>
+                    <a id="instagram" href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a id="youtube" href="#"><i class="fa-brands fa-youtube" target="_blank"></i></a>
+                </div>
+                
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Drone Hub. All rights reserved.</p>
+            </div>
+        </footer>
+    
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        <script src="scripts.js"></script>
+        <script src="app.js"></script>
+        <script src="https://cdn.botpress.cloud/webchat/v2.1/inject.js"></script>
+        <script src="https://mediafiles.botpress.cloud/c88067a3-f393-4234-b47e-4a937e7d1e3a/webchat/v2.1/config.js"></script>
+    </body>
+    </html>
